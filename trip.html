@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Categories</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Langkah Liar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photos.html">Photos</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="#" class="text-dark mx-1"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-dark mx-1"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-dark mx-1"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Trip</h2>
+            <div class="row g-4">
+                <!-- Featured Card 1 -->
+                <div class="col-md-6">
+                    <div class="card blog-card">
+                        <img src="assets/img/trip/pacitan.jpg" class="card-img-top" alt="Road Trip">
+                        <div class="card-body">
+                            <h5 class="card-title">Mengejar Sunrise dari Yogyakarta ke Pacitan</h5>
+                            <p class="card-text">Kami tak tahu pasti mau ke mana. Hanya niat mengejar sunrise di pantai dan playlist “Indie Roadtrip” yang mengisi mobil. Rencana pun lahir dari papan penunjuk jalan...</p><br>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="far fa-calendar-alt"></i> April 10, 2025</small>
+                                <a href="#" class="btn btn-sm btn-outline-warning">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Featured Card 2 -->
+                <div class="col-md-6">
+                    <div class="card blog-card">
+                        <img src="assets/img/trip/malang.jpg" class="card-img-top" alt="Venice">
+                        <div class="card-body">
+                            <h5 class="card-title">Jalan Sunyi dari Malang ke Lumajang – Jalur Perbukitan Sendu</h5>
+                            <p class="card-text">Bukan jalan utama, tapi jalan penuh cerita. Perjalanan kami dari Malang ke Lumajang lewat jalur perbukitan kecil adalah salah satu momen paling tenang sekaligus paling reflektif...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted"><i class="far fa-calendar-alt"></i> April 15, 2025</small>
+                                <a href="#" class="btn btn-sm btn-outline-warning">Continue Reading</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 LangkahLiar All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white mx-1">Terms</a>
+                    <a href="#" class="text-white mx-1">Privacy</a>
+                    <a href="#" class="text-white mx-1">Cookies</a>
+                    <a href="#" class="text-white mx-1">Contact</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <!-- Footer Links -->
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white mx-1"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white mx-1"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mx-1"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white mx-1"><i class="fab fa-pinterest"></i>
+                    <a href="#" class="text-white mx-1"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JavaScript -->
+        <script>
+            // Initialize tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            
+            // Simple carousel functionality for categories
+            const prevButton = document.querySelector('.carousel-control-prev');
+            const nextButton = document.querySelector('.carousel-control-next');
+            const categoryRow = document.querySelector('.category-card').parentElement.parentElement;
+            
+            if(prevButton && nextButton && categoryRow) {
+                prevButton.addEventListener('click', function() {
+                    // Add scroll left logic here for a real implementation
+                    console.log('Scroll left');
+                });
+                
+                nextButton.addEventListener('click', function() {
+                    // Add scroll right logic here for a real implementation
+                    console.log('Scroll right');
+                });
+            }
+            
+            // For a real implementation, you would connect to a maps API
+            // Example placeholder for Google Maps initialization
+            function initMap() {
+                // Map initialization code would go here
+                console.log('Map initialized');
+            }
+        </script>
+</body>
+</html>
