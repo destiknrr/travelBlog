@@ -9,10 +9,11 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" data-aos="fade-in">
         <div class="container">
             <a class="navbar-brand" href="index.html">Langkah Liar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -41,10 +42,10 @@
 
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-4">Beaches</h2>
+            <h2 class="text-center mb-4" data-aos="fade-in">Beaches</h2>
             <div class="row g-4">
                 <!-- Featured Card 1 -->
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up">
                     <div class="card blog-card">
                         <img src="assets/img/pantai/ora.jpg" class="card-img-top" alt="Venice">
                         <div class="card-body">
@@ -58,7 +59,7 @@
                     </div>
                 </div>
                 <!-- Featured Card 2 -->
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-up">
                     <div class="card blog-card">
                         <img src="assets/img/pantai/pasirputih.jpeg" class="card-img-top" alt="Road Trip">
                         <div class="card-body">
@@ -66,14 +67,14 @@
                             <p class="card-text">Pagi itu, udara terasa sejuk dan segar. Langit berwarna biru pucat, perlahan disaput semburat jingga matahari yang baru terbit. Aku menapakkan kaki di atas hamparan pasir yang seputih kapas, halus seperti bedak di telapak kaki....</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted"><i class="far fa-calendar-alt"></i> April 10, 2025</small>
-                                <a href="#" class="btn btn-sm btn-outline-warning">Continue Reading</a>
+                                <a href="article/beaches/pantai-ora.html" class="btn btn-sm btn-outline-warning">Continue Reading</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Second row of featured posts -->
-            <div class="row g-4">
+            <div class="row g-4" data-aos="fade-up">
                 <!-- Featured Card 3 -->
                 <div class="col-md-6">
                     <div class="card blog-card">
@@ -83,7 +84,8 @@
                             <p class="card-text">Aku memulai perjalanan dengan menaiki perahu kecil yang meluncur membelah air sebening kaca. Di bawah perahu, terumbu karang berwarna-warni tampak begitu dekat, seolah bisa kusentuh dengan tangan. Sesampainya di Liang, pasir putih bersih menyambutku, membentang luas di bawah langit biru sempurna. Aku berlari kecil ke arah laut, tak sabar untuk merasakan sejuknya air yang menggoda di kejauhan...</p><br>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted"><i class="far fa-calendar-alt"></i> April 5, 2025</small>
-                                <a href="#" class="btn btn-sm btn-outline-warning">Continue Reading</a>
+                            <a href="article/beaches/pantai-ora.html" class="btn btn-sm btn-outline-warning">Continue Reading</a>
+
                             </div>
                         </div>
                     </div>
@@ -97,7 +99,8 @@
                             <p class="card-text">Tak semua perpisahan diwarnai air mata. Ada yang ditinggalkan dalam sunyi, ditemani debur ombak dan cahaya jingga yang perlahan padam. Di Pantai Wediombo, aku menemukan cerita yang belum selesai—kisah tentang janji yang terucap lewat diam, dan kenangan yang abadi di antara batu karang dan langit senja...</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted"><i class="far fa-calendar-alt"></i> April 1, 2025</small>
-                                <a href="#" class="btn btn-sm btn-outline-warning">Continue Reading</a>
+                                                               <a href="article/beaches/pantai-ora.html" class="btn btn-sm btn-outline-warning">Continue Reading</a>
+
                             </div>
                         </div>
                     </div>
@@ -107,67 +110,42 @@
     </section>
 
         <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 LangkahLiar All Rights Reserved</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-white mx-1">Terms</a>
-                    <a href="#" class="text-white mx-1">Privacy</a>
-                    <a href="#" class="text-white mx-1">Cookies</a>
-                    <a href="#" class="text-white mx-1">Contact</a>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-6">
-                    <!-- Footer Links -->
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-white mx-1"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-white mx-1"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white mx-1"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white mx-1"><i class="fab fa-pinterest"></i>
-                    <a href="#" class="text-white mx-1"><i class="fab fa-pinterest"></i></a>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 LangkahLiar All Rights Reserved</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="text-black mx-1">Terms</a>
+                        <a href="#" class="text-black mx-1">Privacy</a>
+                        <a href="#" class="text-black mx-1">Cookies</a>
+                        <a href="#" class="text-black mx-1">Contact</a>
                     </div>
                 </div>
-            </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <!-- Footer Links -->
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="text-black mx-1"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-black mx-1"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-black mx-1"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-black mx-1"><i class="fab fa-pinterest"></i>
+                        <a href="#" class="text-black mx-1"><i class="fab fa-tiktok"></i>
+                        </div>
+                    </div>
+                </div>
         </footer>
     
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Custom JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            // Initialize tooltips
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
-            
-            // Simple carousel functionality for categories
-            const prevButton = document.querySelector('.carousel-control-prev');
-            const nextButton = document.querySelector('.carousel-control-next');
-            const categoryRow = document.querySelector('.category-card').parentElement.parentElement;
-            
-            if(prevButton && nextButton && categoryRow) {
-                prevButton.addEventListener('click', function() {
-                    // Add scroll left logic here for a real implementation
-                    console.log('Scroll left');
-                });
-                
-                nextButton.addEventListener('click', function() {
-                    // Add scroll right logic here for a real implementation
-                    console.log('Scroll right');
-                });
-            }
-            
-            // For a real implementation, you would connect to a maps API
-            // Example placeholder for Google Maps initialization
-            function initMap() {
-                // Map initialization code would go here
-                console.log('Map initialized');
-            }
-        </script>
+            AOS.init({ offset: 0 });
+            </script>
+        <script src="scripts/script.js"></script>
 </body>
 </html>

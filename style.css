@@ -1,6 +1,6 @@
 /* Custom styles */
 .hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -107,7 +107,7 @@ nav {
 }
 
 footer {
-    background-color: #545148;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(53, 53, 53);
     padding: 20px 0;
 }
